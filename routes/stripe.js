@@ -7,7 +7,7 @@ const { authCheck } = require("../middlewares/authCheck");
 //import controller
 const { payment } = require("../controllers/stripe");
 
-// @ENDPOINT http://localhost:5000/api/
+// @ENDPOINT https://ecom-server-api.vercel.app/api/
 router.post("/user/create-payment-intent", authCheck, payment);
 
 module.exports = router;

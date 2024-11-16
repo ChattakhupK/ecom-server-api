@@ -7,7 +7,7 @@ const { register, login, currentUser } = require("../controllers/auth");
 //import Middleware
 const { adminCheck, authCheck } = require("../middlewares/authCheck");
 
-//@ENDPOINT http://localhost:5000/api/register
+//@ENDPOINT https://ecom-server-api.vercel.app/api/register
 router.post("/register", register);
 router.post("/login", login);
 router.post("/current-user", authCheck, currentUser);

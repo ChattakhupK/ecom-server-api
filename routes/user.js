@@ -18,7 +18,7 @@ const {
   getOrder,
 } = require("../controllers/user");
 
-// @ENDPOINT http://localhost:5000/api/users
+// @ENDPOINT https://ecom-server-api.vercel.app/api/users
 router.get("/users", authCheck, adminCheck, listUsers);
 router.post("/change-status", authCheck, adminCheck, changeStatus);
 router.post("/change-role", authCheck, adminCheck, changeRole);

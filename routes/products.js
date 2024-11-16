@@ -18,7 +18,7 @@ const {
 
 const { adminCheck, authCheck } = require("../middlewares/authCheck");
 
-// @ENDPOINT http://localhost:5000/api/product
+// @ENDPOINT https://ecom-server-api.vercel.app/api/product
 router.post("/product", create);
 router.get("/products/:count", list);
 router.get("/product/:id", read);
